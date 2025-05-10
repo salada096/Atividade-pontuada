@@ -1,0 +1,114 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #6c5ce7;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.fotos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    gap: 20px;
+}
+
+.fotos-container img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #e0e0e0; /* Cor de placeholder enquanto as imagens não são carregadas */
+}
+
+.fotos-container img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.texto-sobre {
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    margin: 30px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    line-height: 1.8;
+}
+
+.texto-sobre p {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.contatos {
+    background-color: #cdc7fd;
+    color: rgb(0, 0, 0);
+    border-radius: 12px;
+    padding: 30px;
+    margin: 30px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contatos p:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 10px;
+}
+
+.contatos p {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+#botao{
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    background-color: #dcc4ff;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+a{
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .fotos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .fotos-container img {
+        width: 100%;
+        max-width: 300px;
+        height: 350px;
+        margin-bottom: 20px;
+    }
+    
+    .texto-sobre, .contatos {
+        padding: 20px;
+    }
+}
