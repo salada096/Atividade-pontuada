@@ -1,16 +1,18 @@
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("submit", function() {
 
     const nome = document.getElementById("nome").value;
     const email = document.getElementById("email").value;
+    const mensagem = document.getElementById("mensagem").value;
 
-    if(nome == "" || email == "" || senha == "" || senha2 == ""){
+    if(nome == "" || email == ""|| mensagem == ""){
         alert("Preencha todos os campos necessários!");
         return false;
     }
 
   else{  
-     alert("Mensagem enviada com sucesso!");  
+     alert("Mensagem enviada com sucesso!"); 
+    form.submit(); 
       }
 });
 
